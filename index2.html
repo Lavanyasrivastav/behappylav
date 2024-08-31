@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BE HAPPY</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        /* Container for the smiley face */
+        .smiley {
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: relative;
+            margin: 100px auto;
+        }
+
+        /* Eyes */
+        .smiley::before, .smiley::after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 40px;
+        }
+
+        /* Left Eye */
+        .smiley::before {
+            left: 35px;
+        }
+
+        /* Right Eye */
+        .smiley::after {
+            right: 35px;
+        }
+
+        /* Mouth */
+        .mouth {
+            width: 80px;
+            height: 40px;
+            border: 5px solid black;
+            border-top: none;
+            border-radius: 0 0 50px 50px;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    Live your  life to the fullest
+    <div class="smiley">
+        <div class="mouth"></div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
